@@ -115,7 +115,6 @@ label[for="hamburger"] {
     border-top: 7px solid #37474F;
     background-color: transparent;
     box-sizing: border-box;
-    transition: .3s transform linear;
     z-index: 1;
     margin: 15px;
     transition: left .3s linear;
@@ -134,7 +133,7 @@ label[for="hamburger"]::before, label[for="hamburger"]::after {
 
 label[for="hamburger"]::after {
     transform: translateY(27px);
-    transition: .3s transform linear;
+    transition: transform .3s linear;
 }
 
 .hamburger:checked + label {
@@ -174,7 +173,7 @@ label[for="hamburger"]::after {
     left: 0;
 }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 40em) {
 
     .hamburger, label[for="hamburger"] {
         display: none;
@@ -198,7 +197,7 @@ label[for="hamburger"]::after {
         border: 1px solid #37474F;
         height: auto;
         margin-right: 10px;
-    } 
+    }
 
     .navigation ul li:last-child {
         margin-right: 0;
@@ -224,4 +223,3 @@ label[for="hamburger"]::after {
     }
 
 }
-
